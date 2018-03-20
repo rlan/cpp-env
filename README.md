@@ -1,4 +1,9 @@
-Pre-built C++ developement environment in Ubuntu.
+Pre-built C++ developement environment on [Docker Hub](https://hub.docker.com/r/wqael/cpp-env/)
+
+# Tags
+
+* `gcc7-ubuntu17.10` [Dockerfile](https://github.com/rlan/cpp-env/blob/gcc7-ubuntu17.10/Dockerfile)
+* `gcc5.4-ubuntu16.04` [Dockerfile](https://github.com/rlan/cpp-env/blob/gcc5.4-ubuntu16.04/Dockerfile)
 
 # What's included
 
@@ -9,8 +14,3 @@ Pre-built C++ developement environment in Ubuntu.
 * gdb
 * valgrind
 * See Dockerfile for more details.
-
-# Tags
-
-* `gcc7-ubuntu17.10` [Dockerfile](https://github.com/rlan/cpp-env/blob/gcc7-ubuntu17.10/Dockerfile)
-* `gcc5.4-ubuntu16.04` [Dockerfile](https://github.com/rlan/cpp-env/blob/gcc5.4-ubuntu16.04/Dockerfile)

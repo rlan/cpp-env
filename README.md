@@ -13,10 +13,10 @@ Pre-built C++ developement environment on [Docker Hub](https://hub.docker.com/r/
 
 # What's included
 
-* Ubuntu
-* autotools
-* cmake
-* Boost
-* gdb
-* valgrind
-* See Dockerfile for more details.
+* [Ubuntu](https://www.ubuntu.com/)
+* [autotools](https://www.gnu.org/software/automake/faq/autotools-faq.html)
+* [cmake](https://cmake.org/)
+* [Boost](https://www.boost.org/)
+* [gdb](https://www.gnu.org/software/gdb/)
+* [valgrind](http://valgrind.org/)
+* See respective Dockerfile for more details.

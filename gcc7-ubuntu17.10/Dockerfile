@@ -8,7 +8,7 @@ RUN apt-get update --fix-missing && apt-get -y install \
     autoconf-archive \
     automake \
     build-essential \
-    cmake
+    cmake \
     gdb \
     git \
     libboost-all-dev \

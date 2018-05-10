@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM ubuntu:18.04
 
 LABEL description="Pre-built C++ developement environment in Ubuntu."
 LABEL maintainer="https://github.com/rlan/cpp-env"
@@ -8,6 +8,8 @@ RUN apt-get update --fix-missing && apt-get -y install \
     autoconf-archive \
     automake \
     build-essential \
+    g++-8 \
+    gcc-8 \
     gdb \
     git \
     libboost-all-dev \
@@ -18,8 +20,11 @@ RUN apt-get update --fix-missing && apt-get -y install \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 700 --slave /usr/bin/g++ g++ /usr/bin/g++-7 \
+    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
+
 # Install cmake
-RUN wget https://cmake.org/files/v3.10/cmake-3.10.3-Linux-x86_64.sh \
+RUN wget https://cmake.org/files/v3.11/cmake-3.11.1-Linux-x86_64.sh \
     -O /tmp/cmake.sh \
     && mkdir /opt/cmake \
     && sh /tmp/cmake.sh --prefix=/opt/cmake --skip-license \

@@ -8,6 +8,7 @@ RUN apt-get update --fix-missing && apt-get -y install \
     autoconf-archive \
     automake \
     build-essential \
+    cmake
     gdb \
     git \
     libboost-all-dev \
@@ -17,11 +18,3 @@ RUN apt-get update --fix-missing && apt-get -y install \
     wget \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-# Install cmake
-RUN wget https://cmake.org/files/v3.11/cmake-3.11.1-Linux-x86_64.sh \
-    -O /tmp/cmake.sh \
-    && mkdir /opt/cmake \
-    && sh /tmp/cmake.sh --prefix=/opt/cmake --skip-license \
-    && ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake \
-    && rm /tmp/cmake.sh

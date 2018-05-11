@@ -20,11 +20,8 @@ RUN apt-get update --fix-missing && apt-get -y install \
     build-essential \
     cmake \
     gdb \
-    git \
     libboost-all-dev \
     libtool \
     valgrind \
-    vim \
-    wget \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

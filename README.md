@@ -10,7 +10,6 @@ Pre-built C++ developement environment on [Docker Hub](https://hub.docker.com/r/
 
 * `latest` [Dockerfile](latest/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/cpp-env:latest.svg)](https://microbadger.com/images/wqael/cpp-env:latest)
 * `gcc7-ubuntu18.04` [Dockerfile](gcc7-ubuntu18.04/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/cpp-env:gcc7-ubuntu18.04.svg)](https://microbadger.com/images/wqael/cpp-env:gcc7-ubuntu18.04)
-* `gcc7-ubuntu17.10` [Dockerfile](gcc7-ubuntu17.10/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/cpp-env:gcc7-ubuntu17.10.svg)](https://microbadger.com/images/wqael/cpp-env:gcc7-ubuntu17.10)
 * `gcc5.4-ubuntu16.04` [Dockerfile](gcc5.4-ubuntu16.04/Dockerfile) [![](https://images.microbadger.com/badges/image/wqael/cpp-env:gcc5.4-ubuntu16.04.svg)](https://microbadger.com/images/wqael/cpp-env:gcc5.4-ubuntu16.04)
 
 

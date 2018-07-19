@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         autoconf-archive \
         automake \
         build-essential \
+        ca-certificates \
         g++-8 \
         gcc-8 \
         gdb \
@@ -34,8 +35,8 @@ RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 700 --slave /u
     update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
 
 # Install cmake
-#RUN wget –q -nv https://cmake.org/files/v3.12/cmake-3.12.0-Linux-x86_64.sh -O /tmp/cmake.sh && \
-#    mkdir /opt/cmake && \
-#    sh /tmp/cmake.sh --prefix=/opt/cmake --skip-license && \
-#    ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake && \
-#    rm /tmp/cmake.sh
+RUN wget https://cmake.org/files/v3.12/cmake-3.12.0-Linux-x86_64.sh -q -O /tmp/cmake.sh && \
+    mkdir /opt/cmake && \
+    sh /tmp/cmake.sh --prefix=/opt/cmake --skip-license && \
+    ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake && \
+    rm /tmp/cmake.sh

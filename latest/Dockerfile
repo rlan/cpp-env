@@ -62,7 +62,7 @@ RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 700 --slave /u
     update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
 
 # Install cmake
-RUN wget https://cmake.org/files/v3.13/cmake-3.13.4-Linux-x86_64.sh -q -O /tmp/cmake.sh && \
+RUN wget https://github.com/Kitware/CMake/releases/download/v3.14.1/cmake-3.14.1-Linux-x86_64.sh -q -O /tmp/cmake.sh && \
     mkdir -p /opt/cmake && \
     sh /tmp/cmake.sh --prefix=/opt/cmake --skip-license && \
     ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake && \

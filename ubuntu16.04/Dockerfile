@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         autoconf-archive \
         automake \
         build-essential \
+        clang \
         cmake \
         gdb \
         libboost-all-dev \
